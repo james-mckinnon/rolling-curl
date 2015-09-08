@@ -235,7 +235,7 @@ class RollingCurl
 
         // Use a shorter select timeout when there is something to do between calls
         $idleCallback = $this->idleCallback;
-        $selectTimeout = $idleCallback ? 0.1 : 1.0;
+        $selectTimeout = $idleCallback ? 5.0 : 10.0;
 
         do {
 
